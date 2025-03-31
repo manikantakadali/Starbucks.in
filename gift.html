@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <section class="containers">
+        <div class="header-1"">
+            <ul class="list-container">
+                <img src="https://www.starbucks.in/assets/icon/logo.png" alt="" class="coffee-img">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./gift.html">Gift</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><button onclick="showLoginpopup()" id="main-btn">Pay</button></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 30px;">
+                <span><img src="https://www.starbucks.in/assets/icon/search.svg" alt="" class="b12"><input type="text" placeholder="Looking for something" title="please fill thise filled"></span>
+                <a href="./profile.html"><img src="https://www.starbucks.in/assets/icon/account_thin.svg" alt="" class="image-b1"></a>
+            </div>
+        </div>
+               <dialog id="popup1">
+            <div class="skp">
+                <h3>Login</h3>
+                <button onclick="closeLoginpopup()" class="main-btn">SKIP</button>
+            </div>
+            <label for="">USERNAME</label><br>
+            <input type="text" name="" id="username" placeholder="Enter Email iD or Mobile Number*"><br>
+            <small id="usernameError"></small><br>
+            <label for="">PASSWORD</label><br>
+            <input type="password" name="" id="password" placeholder="Enter Password*"><br>
+            <small id="passwordError"></small><br>
+            <span>Dont't have an account?<a href="">SignUp</a></span>
+            <div class="button">
+                <button type="button" onclick="submitHandler()">Login</button>
+                <span>Facing trouble logging in?<a href="">Get Help</a></span>
+                <span><img src="https://www.starbucks.in/assets/images/whatsapp-logo.png" alt="">Already registered WhatsApp?<a href="">Continue Here</a></span>
+            </div>
+            </dialog>
+        <div class="mt-container"></div>
+        <div class="header-2">
+            <img src="https://www.starbucks.in/assets/icon/left-icon.svg" alt="" class="b11">
+            <ul class="list-1">
+                <li><a href="./gift.html">FEATURED</a></li>
+                <li><a href="./anytime">ANYTIME</a></li>
+                <li><a href="./congrstulstions">CONGRATULATION</a></li>
+                <li><a href="./thankyou">THANK YOU</a></li>
+            </ul>
+            <img src="https://www.starbucks.in/assets/icon/right-icon.svg" alt="" class="b11">
+        </div>
+        <div class="any">
+            <h2>Anytime</h2>
+            <hr>
+        </div>
+        <div class="india-container">
+            <div class="main-containers">
+                <div class="items-1">
+                    <div class="items-2">
+                        <div  class="b34">
+                            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/TSB_GC_indiacard_1_1_28dafb2bb6.png" alt="">
+                        </div>
+                        <div class="exc">
+                            <p>India Exclusive</p>
+                            <small>Bring in the festive season and make <br>each celebration memorable.</small>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <a href=""><button class="o">Add item</button></a>
+                    </div>
+                </div>
+                <div class="items-1">
+                    <div class="items-2">
+                        <div  class="b34">
+                            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/71d3780c_be6e_46b1_ab01_8a2bce244a7f_1_1_2d1afadaa0.png" alt="">
+                        </div>
+                        <div class="exc">
+                            <p>Starbucks Coffee</p>
+                            <small>Bring in the festive season and make <br>each celebration memorable.</small>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <a href=""><button class="o">Add item</button></a>
+                    </div>
+                </div>
+                <div class="items-1">
+                    <div class="items-2">
+                        <div  class="b34">
+                            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7c6f7c64_3f89_4ba2_9af8_45fc6d94ad35_1_1bdd3bf075.webp" alt="">
+                        </div>
+                        <div class="exc">
+                            <p>U Keep Me Warm</p>
+                            <small>Bring in the festive season and make <br>each celebration memorable.</small>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <a href=""><button class="o">Add item</button></a>
+                    </div>
+                </div>
+                <div class="items-1 bb">
+                    <div class="items-2">
+                        <div  class="b34">
+                            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7c6f7c64_3f89_4ba2_9af8_45fc6d94ad35_1_1bdd3bf075.webp" alt="">
+                        </div>
+                        <div class="exc">
+                            <p>U Keep Me Warm</p>
+                            <small>Bring in the festive season and make <br>each celebration memorable.</small>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <a href=""><button class="o">Add item</button></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Congratulation</h2>
+            <hr>
+            <div class="b01">
+                <div class="items-1">
+                    <div class="items-2">
+                        <div  class="b34">
+                            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7c6f7c64_3f89_4ba2_9af8_45fc6d94ad35_1_1bdd3bf075.webp" alt="">
+                        </div>
+                        <div class="exc">
+                            <p>U Keep Me Warm</p>
+                            <small>Bring in the festive season and make <br>each celebration memorable.</small>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <a href=""><button class="o">Add item</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <section class="footer-1">
+                <div class="img-container">
+                    <img src="https://www.starbucks.in/assets/icon/logo.png" alt="" width="50px">
+                </div>
+                <div class="about-container">
+                    <a href=""><h2>About Us</h2></a>
+                    <ul class="list-container-2">
+                        <li><a href="">Our Heritage</a></li>
+                        <li><a href="">Coffeehouse</a></li>
+                        <li><a href="">Our Company</a></li>
+                    </ul>
+                </div>
+                <div class="about-container">
+                    <a href=""><h2>Responsibility</h2></a>
+                    <ul class="list-container-2">
+                        <li><a href="">Diversity</a></li>
+                        <li><a href="">Community</a></li>
+                        <li><a href="">Ethical Sourching</a></li>
+                        <li><a href="">Environmental Stewardship</a></li>
+                        <li><a href="">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="about-container">
+                    <a href=""><h2>Quick Links</h2></a>
+                    <ul class="list-container-2">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Coustomer Service</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Loyalty Program Terms and <br>Conditions</a></li>
+                        <li><a href="">Beverage Subscription</a></li>
+                        <li><a href="">Starbucks India Mobile App <br>Terms of Use</a></li>
+                        <li><a href="">Special Discount 25% Off <br>Offer</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href=""><h2>SOCIAL MEDIA</h2></a>
+                    <div class="icons-container">
+                        <img src="https://www.starbucks.in/assets/icon/instagram.svg" alt="">   
+                        <img src="https://www.starbucks.in/assets/icon/facebook.svg" alt="">
+                        <img src="https://www.starbucks.in/assets/icon/twitter.svg" alt="">
+                    </div>
+                </div>
+                <div class="app-container">
+                    <p><a href=""><img src="https://www.starbucks.in/assets/images/appstoreiOS.png" alt=""></a></p>
+                    <p><a href=""><img src="https://www.starbucks.in/assets/images/appstoreAndroid.png" alt=""></a></p>
+                </div>
+            </section>
+            <div class="footer-2">
+                <div class="web">
+                    <p>Web Accessiblity </p>
+                    <p> Privacy Statement </p>
+                    <p> Terms of Use </p>
+                    <p> Contact Us</p>
+                </div>
+                <div  class="copy">
+                    <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        let popup1 = document.getElementById('popup1');
+         function showLoginpopup(){
+            popup1.showModal();
+         }
+        function closeLoginpopup(){
+            popup1.close();
+        }
+    </script>
+     <script>
+        var username = document.getElementById('username');
+        var nameError = doument.getElementById('usernameError');
+
+        var password = document.getElementById('password');
+        var numberError = document.getElementById('passwordError');
+
+        function submitHandler(){
+            if(username.value.length == 0){
+                    usernameError.innerHTML = "<span style='color:red; background-color:#f4baba; padding:6px;'>Please fill the username</span>"
+                }else{
+                    if(username.value.length<8){
+                        usernameError.innerHTML = "<span style='color:red; background-color:#f4baba; padding:6px;'>username need atleast 8 charecters</span>"
+
+                    }else{
+                        usernameError.innerHTML = "<span style='color:green; background-color:#c2f7c1; padding:6px;'>Valid username</span>"
+                    }
+                }
+        }
+    </script>
+</body>
+</html>
